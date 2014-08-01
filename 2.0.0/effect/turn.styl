@@ -1,0 +1,35 @@
+@import "../nib/vendor.styl"
+/*
+ *    turn(0.3s)
+ */
+turn(speed = 0.3s)
+  .effect-turn
+    a
+      line-height: 2em
+      perspective 800px
+      span
+        display: inline-block
+        position: relative
+        padding: 3px 15px 0
+        background: #587285
+        transition background speed
+        transform-origin 0% 50%
+        transform-style preserve-3d
+        &::before
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background:  #fff
+          color: #2f4351
+          content: attr(data-hover)
+          transform rotateX(270deg)
+          transform-origin 0 0
+          transition transform speed
+      &:hover,&:focus
+        span
+          background: #2f4351
+        span::before
+          transform rotateX(10deg)
+

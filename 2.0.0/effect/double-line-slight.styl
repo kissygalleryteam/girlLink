@@ -1,0 +1,33 @@
+@import "../nib/vendor.styl"
+/*
+ *    direction 动画偏移方向，可以是up和down
+ *    offset Y轴偏移
+ *    speed 动画速度
+ *    borderColor 边框颜色
+ *    height 边框高度
+ */
+doubleLineSlight(speed = 0.3s,borderColor = #f19f0f,height = 2px)
+  .effect-double-line-slight
+    a
+      padding: 10px
+      transition color speed
+      &::before,&::after
+        position: absolute
+        left: 0
+        width: 100%
+        height: height
+        background: borderColor
+        content: ''
+        opacity: 0
+        transition opacity speed, transform speed
+      &::before
+        top: 0
+        transform translateY(-10px)
+      &::after
+        bottom: 0
+        transform translateY(10px)
+      &:hover,&:focus
+        color: borderColor
+      &:hover::after,&:focus::after,&:hover::before,&:focus::before
+        opacity: 1
+        transform translateY(0)

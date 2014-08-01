@@ -1,0 +1,29 @@
+@import "../nib/vendor.styl"
+/*
+ * doubleLine(0.3s,#f19f0f)
+ *    speed 动画速度
+ *    borderColor 边框颜色
+ *    height 边框高度
+ */
+doubleLine(speed = 0.3s,borderColor = #f19f0f,height = 2px)
+  .effect-double-line
+    a
+      padding: 10px
+      &::before,&::after
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        height: height
+        background: borderColor
+        content: ''
+        transform scale(0.85)
+        transition transform speed
+      &::after
+        opacity: 0
+        transition top speed, opacity speed, transform speed
+      &:hover::after,&:focus::after,&:hover::before,&:focus::before
+        transform scale(1)
+      &:hover::after,&:focus::after
+        top: 0%
+        opacity: 1

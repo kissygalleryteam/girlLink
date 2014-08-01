@@ -1,0 +1,27 @@
+@import "../nib/vendor.styl"
+/*
+ * bracket(20px,0.3s,'[',']')
+ *    offset X轴偏移
+ *    speed 动画速度
+ *    beforeContent 元素前面插入的内容
+ *    afterContent 元素后面插入的内容
+ */
+
+bracket(offset = 20px,speed = 0.3s,beforeContent = '[',afterContent = ']')
+  .effect-bracket
+    a
+      &::before,&::after
+        display: inline-block
+        opacity: 0
+        transition transform speed,opacity speed
+      &::before
+        margin-right: 10px
+        content: beforeContent
+        transform translateX(offset)
+      &::after
+        margin-left: 10px
+        content: afterContent
+        transform translateX(-(offset))
+      &:hover::before,&:hover::after,&:focus::before,&:focus::after
+        opacity: 1
+        transform translateX(0)

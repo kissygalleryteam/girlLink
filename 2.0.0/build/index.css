@@ -1,0 +1,755 @@
+
+/* line 1 : C:\www\htdocs\gallery\girlLink\node_modules\grunt-contrib-stylus\node_modules\stylus\lib\functions\index.styl */
+
+/* line 228 : C:\www\htdocs\gallery\girlLink\1.0\effect\base.styl */
+
+/* line 1 : C:\www\htdocs\gallery\girlLink\1.0\effect\base.styl */
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* line 4 : C:\www\htdocs\gallery\girlLink\1.0\effect\base.styl */
+
+/* line 5 : C:\www\htdocs\gallery\girlLink\1.0\effect\base.styl */
+.girl-nav a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  font-size: 1.35em;
+}
+
+/* line 28 : C:\www\htdocs\gallery\girlLink\1.0\effect\bracket.styl */
+
+/* line 28 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 30 : C:\www\htdocs\gallery\girlLink\1.0\effect\bottom-line.styl */
+
+/* line 30 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 30 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line.styl */
+
+/* line 30 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 34 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line-slight.styl */
+
+/* line 34 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 21 : C:\www\htdocs\gallery\girlLink\1.0\effect\scale-down.styl */
+
+/* line 21 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 26 : C:\www\htdocs\gallery\girlLink\1.0\effect\fall-down.styl */
+
+/* line 26 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 25 : C:\www\htdocs\gallery\girlLink\1.0\effect\text-fill.styl */
+
+/* line 25 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 49 : C:\www\htdocs\gallery\girlLink\1.0\effect\push-out.styl */
+
+/* line 49 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 22 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide.styl */
+
+/* line 22 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 34 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide-3d.styl */
+
+/* line 34 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 29 : C:\www\htdocs\gallery\girlLink\1.0\effect\border-fall.styl */
+
+/* line 29 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 35 : C:\www\htdocs\gallery\girlLink\1.0\effect\turn.styl */
+
+/* line 35 : C:\www\htdocs\gallery\girlLink\1.0\nib\vendor.styl */
+
+/* line 557 : C:\www\htdocs\gallery\girlLink\1.0\nib\config.styl */
+
+/* line 11 : C:\www\htdocs\gallery\girlLink\1.0\effect\bracket.styl */
+
+/* line 12 : C:\www\htdocs\gallery\girlLink\1.0\effect\bracket.styl */
+
+/* line 13 : C:\www\htdocs\gallery\girlLink\1.0\effect\bracket.styl */
+.effect-bracket a::before,
+.effect-bracket a::after {
+  display: inline-block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -ms-transition: -ms-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* line 17 : C:\www\htdocs\gallery\girlLink\1.0\effect\bracket.styl */
+.effect-bracket a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* line 21 : C:\www\htdocs\gallery\girlLink\1.0\effect\bracket.styl */
+.effect-bracket a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+/* line 25 : C:\www\htdocs\gallery\girlLink\1.0\effect\bracket.styl */
+.effect-bracket a:hover::before,
+.effect-bracket a:hover::after,
+.effect-bracket a:focus::before,
+.effect-bracket a:focus::after {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 13 : C:\www\htdocs\gallery\girlLink\1.0\effect\bottom-line.styl */
+
+/* line 14 : C:\www\htdocs\gallery\girlLink\1.0\effect\bottom-line.styl */
+
+/* line 15 : C:\www\htdocs\gallery\girlLink\1.0\effect\bottom-line.styl */
+.effect-bottom-line a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: bgColor;
+  content: '';
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  background: #f19f0f;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -ms-transition: -ms-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+/* line 27 : C:\www\htdocs\gallery\girlLink\1.0\effect\bottom-line.styl */
+.effect-bottom-line a:hover::after,
+.effect-bottom-line a:focus::after {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 9 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line.styl */
+
+/* line 10 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line.styl */
+.effect-double-line a {
+  padding: 10px;
+}
+
+/* line 12 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line.styl */
+.effect-double-line a::before,
+.effect-double-line a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #f19f0f;
+  content: '';
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -o-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* line 22 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line.styl */
+.effect-double-line a::after {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  -o-transition: top 0.3s, opacity 0.3s, -o-transform 0.3s;
+  -ms-transition: top 0.3s, opacity 0.3s, -ms-transform 0.3s;
+  transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+/* line 25 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line.styl */
+.effect-double-line a:hover::after,
+.effect-double-line a:focus::after,
+.effect-double-line a:hover::before,
+.effect-double-line a:focus::before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 27 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line.styl */
+.effect-double-line a:hover::after,
+.effect-double-line a:focus::after {
+  top: 0%;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+
+/* line 10 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line-slight.styl */
+
+/* line 11 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line-slight.styl */
+.effect-double-line-slight a {
+  padding: 10px;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+/* line 14 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line-slight.styl */
+.effect-double-line-slight a::before,
+.effect-double-line-slight a::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #f19f0f;
+  content: '';
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  -o-transition: opacity 0.3s, -o-transform 0.3s;
+  -ms-transition: opacity 0.3s, -ms-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* line 23 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line-slight.styl */
+.effect-double-line-slight a::before {
+  top: 0;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/* line 26 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line-slight.styl */
+.effect-double-line-slight a::after {
+  bottom: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+/* line 29 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line-slight.styl */
+.effect-double-line-slight a:hover,
+.effect-double-line-slight a:focus {
+  color: #f19f0f;
+}
+
+/* line 31 : C:\www\htdocs\gallery\girlLink\1.0\effect\double-line-slight.styl */
+.effect-double-line-slight a:hover::after,
+.effect-double-line-slight a:focus::after,
+.effect-double-line-slight a:hover::before,
+.effect-double-line-slight a:focus::before {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 10 : C:\www\htdocs\gallery\girlLink\1.0\effect\scale-down.styl */
+
+/* line 11 : C:\www\htdocs\gallery\girlLink\1.0\effect\scale-down.styl */
+.effect-scale-down a {
+  color: #333;
+}
+
+/* line 13 : C:\www\htdocs\gallery\girlLink\1.0\effect\scale-down.styl */
+.effect-scale-down a::before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -ms-transition: -ms-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* line 18 : C:\www\htdocs\gallery\girlLink\1.0\effect\scale-down.styl */
+.effect-scale-down a:hover::before,
+.effect-scale-down a:focus::before {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+/* line 13 : C:\www\htdocs\gallery\girlLink\1.0\effect\fall-down.styl */
+
+/* line 14 : C:\www\htdocs\gallery\girlLink\1.0\effect\fall-down.styl */
+.effect-fall-down a {
+  color: #333;
+}
+
+/* line 16 : C:\www\htdocs\gallery\girlLink\1.0\effect\fall-down.styl */
+.effect-fall-down a::before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -o-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -ms-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -ms-transition: -ms-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* line 23 : C:\www\htdocs\gallery\girlLink\1.0\effect\fall-down.styl */
+.effect-fall-down a:hover::before,
+.effect-fall-down a:focus::before {
+  -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -o-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -ms-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+
+/* line 9 : C:\www\htdocs\gallery\girlLink\1.0\effect\text-fill.styl */
+
+/* line 10 : C:\www\htdocs\gallery\girlLink\1.0\effect\text-fill.styl */
+.effect-text-fill a {
+  color: #333;
+}
+
+/* line 12 : C:\www\htdocs\gallery\girlLink\1.0\effect\text-fill.styl */
+.effect-text-fill a::before {
+  display: inline-block;
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: max-width 0.3s;
+  -moz-transition: max-width 0.3s;
+  -o-transition: max-width 0.3s;
+  -ms-transition: max-width 0.3s;
+  transition: max-width 0.3s;
+}
+
+/* line 23 : C:\www\htdocs\gallery\girlLink\1.0\effect\text-fill.styl */
+.effect-text-fill a:hover::before,
+.effect-text-fill a:focus::before {
+  max-width: 100%;
+}
+
+/* line 24 : C:\www\htdocs\gallery\girlLink\1.0\effect\push-out.styl */
+
+/* line 25 : C:\www\htdocs\gallery\girlLink\1.0\effect\push-out.styl */
+.effect-push-out a {
+  overflow: hidden;
+}
+
+/* line 27 : C:\www\htdocs\gallery\girlLink\1.0\effect\push-out.styl */
+.effect-push-out a span {
+  display: block;
+  padding: 10px 20px;
+  background: #0f7c67;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* line 32 : C:\www\htdocs\gallery\girlLink\1.0\effect\push-out.styl */
+.effect-push-out a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #0f7c67;
+  content: attr(data-hover);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 44 : C:\www\htdocs\gallery\girlLink\1.0\effect\push-out.styl */
+
+/* line 45 : C:\www\htdocs\gallery\girlLink\1.0\effect\push-out.styl */
+.effect-push-out a:hover span,
+.effect-push-out a:focus span {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 47 : C:\www\htdocs\gallery\girlLink\1.0\effect\push-out.styl */
+.effect-push-out a:hover::before,
+.effect-push-out a:focus::before {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+/* line 8 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide.styl */
+
+/* line 9 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide.styl */
+.effect-slide a {
+  overflow: hidden;
+}
+
+/* line 11 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide.styl */
+.effect-slide a span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* line 15 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide.styl */
+.effect-slide a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+}
+
+/* line 19 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide.styl */
+
+/* line 20 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide.styl */
+.effect-slide a:hover span,
+.effect-slide a:focus span {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 6 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide-3d.styl */
+
+/* line 7 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide-3d.styl */
+.effect-slide-3d a {
+  line-height: 44px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+}
+
+/* line 10 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide-3d.styl */
+.effect-slide-3d a span {
+  display: inline-block;
+  position: relative;
+  padding: 0 14px;
+  background: #2195de;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 18 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide-3d.styl */
+.effect-slide-3d a span::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0965a0;
+  content: attr(data-hover);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+/* line 29 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide-3d.styl */
+
+/* line 30 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide-3d.styl */
+.effect-slide-3d a:hover span,
+.effect-slide-3d a:focus span {
+  -webkit-transform: rotateX(90deg) translateY(-22px);
+  -moz-transform: rotateX(90deg) translateY(-22px);
+  -o-transform: rotateX(90deg) translateY(-22px);
+  -ms-transform: rotateX(90deg) translateY(-22px);
+  transform: rotateX(90deg) translateY(-22px);
+}
+
+/* line 32 : C:\www\htdocs\gallery\girlLink\1.0\effect\slide-3d.styl */
+.effect-slide-3d a:hover span::before,
+.effect-slide-3d a:focus span::before {
+  background: #28a2ee;
+}
+
+/* line 6 : C:\www\htdocs\gallery\girlLink\1.0\effect\border-fall.styl */
+
+/* line 7 : C:\www\htdocs\gallery\girlLink\1.0\effect\border-fall.styl */
+.effect-border-fall a {
+  padding: 10px 20px;
+}
+
+/* line 9 : C:\www\htdocs\gallery\girlLink\1.0\effect\border-fall.styl */
+.effect-border-fall a::before,
+.effect-border-fall a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #354856;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0.3s;
+  -ms-transition: -ms-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* line 18 : C:\www\htdocs\gallery\girlLink\1.0\effect\border-fall.styl */
+.effect-border-fall a::after {
+  border-color: #fff;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translateY(-7px) translateX(6px);
+  -moz-transform: translateY(-7px) translateX(6px);
+  -o-transform: translateY(-7px) translateX(6px);
+  -ms-transform: translateY(-7px) translateX(6px);
+  transform: translateY(-7px) translateX(6px);
+}
+
+/* line 23 : C:\www\htdocs\gallery\girlLink\1.0\effect\border-fall.styl */
+.effect-border-fall a:hover::before,
+.effect-border-fall a:focus::before {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translateY(5px) translateX(-5px);
+  -moz-transform: translateY(5px) translateX(-5px);
+  -o-transform: translateY(5px) translateX(-5px);
+  -ms-transform: translateY(5px) translateX(-5px);
+  transform: translateY(5px) translateX(-5px);
+}
+
+/* line 26 : C:\www\htdocs\gallery\girlLink\1.0\effect\border-fall.styl */
+.effect-border-fall a:hover::after,
+.effect-border-fall a:focus::after {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translateY(0px) translateX(0px);
+  -moz-transform: translateY(0px) translateX(0px);
+  -o-transform: translateY(0px) translateX(0px);
+  -ms-transform: translateY(0px) translateX(0px);
+  transform: translateY(0px) translateX(0px);
+}
+
+/* line 6 : C:\www\htdocs\gallery\girlLink\1.0\effect\turn.styl */
+
+/* line 7 : C:\www\htdocs\gallery\girlLink\1.0\effect\turn.styl */
+.effect-turn a {
+  line-height: 2em;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+}
+
+/* line 10 : C:\www\htdocs\gallery\girlLink\1.0\effect\turn.styl */
+.effect-turn a span {
+  display: inline-block;
+  position: relative;
+  padding: 3px 15px 0;
+  background: #587285;
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+  -o-transition: background 0.6s;
+  -ms-transition: background 0.6s;
+  transition: background 0.6s;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 18 : C:\www\htdocs\gallery\girlLink\1.0\effect\turn.styl */
+.effect-turn a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #2f4351;
+  content: attr(data-hover);
+  -webkit-transform: rotateX(270deg);
+  -moz-transform: rotateX(270deg);
+  -o-transform: rotateX(270deg);
+  -ms-transform: rotateX(270deg);
+  transform: rotateX(270deg);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  -ms-transition: -ms-transform 0.6s;
+  transition: transform 0.6s;
+}
+
+/* line 30 : C:\www\htdocs\gallery\girlLink\1.0\effect\turn.styl */
+
+/* line 31 : C:\www\htdocs\gallery\girlLink\1.0\effect\turn.styl */
+.effect-turn a:hover span,
+.effect-turn a:focus span {
+  background: #2f4351;
+}
+
+/* line 33 : C:\www\htdocs\gallery\girlLink\1.0\effect\turn.styl */
+.effect-turn a:hover span::before,
+.effect-turn a:focus span::before {
+  -webkit-transform: rotateX(10deg);
+  -moz-transform: rotateX(10deg);
+  -o-transform: rotateX(10deg);
+  -ms-transform: rotateX(10deg);
+  transform: rotateX(10deg);
+}

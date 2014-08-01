@@ -1,0 +1,24 @@
+@import "../nib/vendor.styl"
+/*
+ *    textFill(#333,#fff,0.3s)
+ *    fromColor 起始颜色
+ *    toColor hover后的颜色
+ *    speed 动画速度
+ */
+textFill(fromColor = #333,toColor = #fff,speed = 0.3s)
+  .effect-text-fill
+    a
+      color: fromColor
+      &::before
+        display: inline-block
+        color: toColor
+        content: attr(data-hover)
+        position: absolute
+        top: 0
+        left: 0
+        max-width: 0
+        overflow: hidden
+        white-space: nowrap
+        transition max-width speed
+      &:hover::before,&:focus::before
+        max-width: 100%

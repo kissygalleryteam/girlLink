@@ -1,0 +1,21 @@
+@import "../nib/vendor.styl"
+slide(direction = 'top',speed = 0.3s)
+  offset = translateY(-100%)
+  d = 'top'
+  if direction is 'bottom'
+    offset = translateY(100%)
+    d = 'bottom'
+  .effect-slide
+    a
+      overflow: hidden
+      span
+        display: inline-block
+        position: relative
+        transition transform speed
+        &::before
+          position: absolute
+          {d}: 100%
+          content: attr(data-hover)
+      &:hover,&:focus
+        span
+          transform offset

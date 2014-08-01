@@ -1,0 +1,28 @@
+@import "../nib/vendor.styl"
+/*
+ *    borderFall(3px solid #354856,0.3s)
+ */
+borderFall(border,speed = 0.3s)
+  .effect-border-fall
+    a
+      padding: 10px 20px
+      &::before,&::after
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border: border
+        content: ''
+        transition transform speed, opacity speed
+      &::after
+        border-color: #fff
+        opacity: 0
+        transform translateY(-7px) translateX(6px)
+
+      &:hover::before,&:focus::before
+        opacity: 0
+        transform translateY(5px) translateX(-5px)
+      &:hover::after,&:focus::after
+        opacity: 1
+        transform translateY(0px) translateX(0px)
