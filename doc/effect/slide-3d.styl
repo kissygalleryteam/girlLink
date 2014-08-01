@@ -1,0 +1,34 @@
+@import "../nib/vendor.styl"
+/*
+ *    slide3d(0.3s)
+ */
+slide3d(speed = 0.3s)
+  .effect-slide-3d
+    a
+      line-height: 44px
+      perspective 1000px
+      span
+        display: inline-block
+        position: relative
+        padding: 0 14px
+        background: #2195de
+        transition transform speed
+        transform-origin 50% 0
+        transform-style preserve-3d
+        &::before
+          position: absolute
+          top: 100%
+          left: 0
+          width: 100%
+          height: 100%
+          background: #0965a0
+          content: attr(data-hover)
+          transition background speed
+          transform rotateX(-90deg)
+          transform-origin 50% 0
+      &:hover,&:focus
+        span
+          transform rotateX(90deg) translateY(-22px)
+        span::before
+          background: #28a2ee
+

@@ -1,0 +1,48 @@
+@import "../nib/vendor.styl"
+/*
+ * pushOut('right',#0f7c67,#fff,0.3s)
+ *    direction push方向
+ *    fromColor 起始颜色
+ *    toColor hover后的颜色
+ *    speed 动画速度
+ */
+pushOut(direction = 'right',fromColor = #0f7c67,toColor = #fff,speed = 0.3s)
+  offset = translateX(-100%)
+  spanOffset = translateX(100%)
+  originPos = translateX(0%)
+  if direction is 'left'
+    offset = translateX(100%)
+    spanOffset = translateX(-100%)
+  if direction is 'bottom'
+    offset = translateY(100%)
+    spanOffset = translateY(-100%)
+    originPos = translateY(0%)
+  if direction is 'top'
+    offset = translateY(-100%)
+    spanOffset = translateY(100%)
+    originPos = translateY(0%)
+  .effect-push-out
+    a
+      overflow: hidden
+      span
+        display: block
+        padding: 10px 20px
+        background: fromColor
+        transition transform speed
+      &::before
+        position: absolute
+        top: 0
+        left: 0
+        padding: 10px 20px
+        width: 100%
+        height: 100%
+        background: toColor
+        color: fromColor
+        content: attr(data-hover)
+        transition transform speed
+        transform offset
+      &:hover,&:focus
+        span
+          transform spanOffset
+        &::before
+            transform originPos

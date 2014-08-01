@@ -1,0 +1,20 @@
+@import "../nib/vendor.styl"
+/*
+ *    scaleDown(0.9,#333,#fff,0.3s)
+ *    scale 缩放级别
+ *    fromColor hover后的颜色
+ *    color 起始颜色
+ *    speed 动画速度
+ */
+scaleDown(scale = 0.9,fromColor = #fff,toColor = #333,speed = 0.3s)
+  .effect-scale-down
+    a
+      color: toColor
+      &::before
+        color: fromColor
+        content: attr(data-hover)
+        position: absolute
+        transition transform speed, opacity speed
+      &:hover::before,&:focus::before
+        transform scale(scale)
+        opacity: 0

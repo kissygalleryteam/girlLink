@@ -1,0 +1,13 @@
+vendor(prop, args,usePre = false)
+  prefixes = webkit moz
+  {prop}: args
+  for prefix in prefixes
+      newprop = '-' + prefix + '-' + prop
+      newargs = args
+      if usePre
+        newargs = \-+prefix\-+args
+      {newprop}: newargs
+transition()
+  vendor "transition",arguments,true
+transform()
+  vendor "transform",arguments

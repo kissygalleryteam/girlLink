@@ -1,0 +1,25 @@
+@import "../nib/vendor.styl"
+/*
+ *    fallDown(1.1,10px,-10px,4deg,#fff,#333,0.3s)
+ *    scale 缩放级别
+ *    translateX X轴偏移
+ *    translateY Y轴偏移
+ *    rotate 旋转角度
+ *    fromColor 起始颜色
+ *    toColor hover后的颜色
+ *    speed 动画速度
+ */
+fallDown(scale = 1.1,translateX = 10px,translateY = -10px,rotate = 4deg,fromColor = #fff,toColor = #333,speed = 0.3s)
+  .effect-fall-down
+    a
+      color: toColor
+      &::before
+        color: fromColor
+        content: attr(data-hover)
+        position: absolute
+        opacity: 0
+        transform scale(scale) translateX(translateX) translateY(translateY) rotate(rotate)
+        transition transform speed, opacity speed
+      &:hover::before,&:focus::before
+        transform scale(1) translateX(0px) translateY(0px) rotate(0deg)
+        opacity: 1
